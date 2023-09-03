@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="questionnaireScript.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Questionnaire</title>
+</head>
+
+<body>
+    <div id="questionContainer">
+        <div id="topTitle">
+            <h1>QUESTIONNAIRE</h1>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div>
+            <label for="languageSelect">Select a Language:</label>
+            <select id="languageSelect">
+                <option value="java">Java</option>
+                <option value="php">PHP</option>
+            </select>
+        </div>
+        <form id="questionForm" action="result.php" method="post">
+            <div id="questionSection"></div>
+            <button id="nextButton" type="button">Next</button>
+            <button id="submitButton" type="submit" style="display: none;">Show Results</button>
+        </form>
+    </div>
+</body>
+
+</html>

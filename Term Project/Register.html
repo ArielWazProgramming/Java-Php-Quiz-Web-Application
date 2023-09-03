@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="registerScript.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <div id="topTitle">
+        <h1>REGISTER</h1>
+    </div>
+    <div id="wrapper">           
+
+        <div id="registrationInfo">
+            <form action="registration.php" method="post">
+                <label for="user">Student ID:</label>
+                <input id="user" type="text" name="user" placeholder="Student ID" required>
+                <br>
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" placeholder="Password" required>
+                <br>
+                <label for="first">First Name:</label>
+                <input id="first" type="text" name="first" placeholder="First Name" required>
+                <br>
+                <label for="last">Last Name:</label>
+                <input id="last" type="text" name="last" placeholder="Last Name" required>
+                <br>
+                <label for="college">College:</label>
+                <select id="college" name="college" required>
+                    <option value="vanier">Vanier</option>
+                    <option value="dawson">Dawson</option>
+                    <option value="johnAbott">John-Abott</option>
+                </select>
+                <br>
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="Email" required>
+                <br>
+                <button class="registerButton" type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="Login.html">Login here</a>.</p>
+        </div>
+    </div>
+</body>
+
+</html>
